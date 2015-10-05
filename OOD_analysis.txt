@@ -1,0 +1,31 @@
+public class CCC //(Custom Consulting Company)
+{
+	private Vector<String> Professionals;
+}
+
+
+
+public class Client
+{
+	private String clientName;
+	private string clientRequest;
+	
+	public void setClientName();
+	public void setClientRequest();
+	public String getClientName();
+	public String getClientRequest();	
+}
+
+public class Professional
+{
+	private String professionalName;
+	private Vector<String> qualifications
+	
+	public void setProfessionalName();
+	public void setProfessionalQualification();
+	public String getProfessionalName();
+	public Vector<String> getQualifications();
+}
+
+
+

@@ -1,0 +1,46 @@
+package csm10jlab06;
+import java.util.Vector;
+
+public class Professional
+{
+    private String professionalName;
+    private Vector<String> qualifications;
+    
+    public Professional(String name)
+    {
+        professionalName = name;
+        qualifications = new Vector<>();
+    };
+    
+    // Instructions sad this was to be private but I get an error when it is.
+    public String getName()
+    {
+    	return professionalName;
+    };
+    
+    public String[] getQualifications()
+    {
+        String qualificationsArr[] = new String[qualifications.size()];
+        
+        for ( int c = 0; c < qualifications.size(); c++ )
+            qualificationsArr[c] = qualifications.elementAt( c );
+        
+        return qualificationsArr;
+    };
+    
+    public void addQualification(String incomingQualif )
+    {
+	   String convertedQualif = incomingQualif.toLowerCase();
+           if ( qualifications.contains( convertedQualif ) == false )
+                qualifications.add(convertedQualif );
+    };
+    
+    public boolean hasQualification(String incomingQualif)
+    {
+        if ( qualifications.contains( incomingQualif ) )
+            return true; 
+        else 
+            return false;
+                
+    };
+}

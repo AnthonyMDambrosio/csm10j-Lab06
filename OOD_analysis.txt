@@ -1,6 +1,8 @@
 public class CCC //(Custom Consulting Company)
 {
 	private Vector<String> Professionals;
+	
+	public void setProfessionals();
 }
 
 
